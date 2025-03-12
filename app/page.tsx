@@ -1,35 +1,47 @@
 import Image from "next/image";
 import { FaTwitter, FaInstagram, FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { Lora } from "next/font/google";
+import { Kaisei_Opti } from "next/font/google";
+
+const LoraFont = Lora({
+  weight: "400",
+  subsets: ["latin"],
+});
+
+const KaiseiFont = Kaisei_Opti({
+  weight: "400",
+  subsets: ["latin"],
+});
 
   export default function Home() {
     return (
-      <div className="relative">
+      <div className="relative h-screen">
         {/* Hero セクション */}
-        <section className="h-screen flex flex-col items-center justify-center bg-pink-200 font-sans text-6xl font-bold">
-        <h1 className="text-6xl font-bold tracking-wide">Otoka Tsutsusaki</h1>
-        <h2 className="mt-4 text-4xl font-semibold">Portfolio</h2>
-
+        <section className="min-h-screen flex flex-col items-center justify-center bg-pink-200 font-sans text-6xl font-bold">
+        <h1 className={`${LoraFont.className} mt-16 sm:mt-[150px] text-6xl tracking-wide text-center mx-auto`}>Otoka Tsutsusaki</h1>
+        <h2 className={`${LoraFont.className} mt-[10px] text-4xl`}>Portfolio</h2>
         
 
         {/* 下のライン */}
         <div className="w-64 h-1 bg-black mt-30"></div>
 
         {/* SNS アイコン */}
-        <div className="flex space-x-10 mt-16 text-3xl">
-        <a href="https://twitter.com/your_twitter" target="_blank" rel="noopener noreferrer">
-        <FaTwitter />
-        </a>
-        <a href="https://www.instagram.com/otto_piyopiyo" target="_blank" rel="noopener noreferrer">
-        <FaInstagram />
-        </a>
-        <a href="https://github.com/otoka34" target="_blank" rel="noopener noreferrer">
-        <FaGithub />
-        </a>
-        </div>
+<div className="flex space-x-10 mt-16 text-3xl">
+  <a href="https://twitter.com/your_twitter" target="_blank" rel="noopener noreferrer">
+    <FaTwitter className="transition-transform duration-300 hover:scale-110" />
+  </a>
+  <a href="https://www.instagram.com/otto_piyopiyo" target="_blank" rel="noopener noreferrer">
+    <FaInstagram className="transition-transform duration-300 hover:scale-110" />
+  </a>
+  <a href="https://github.com/otoka34" target="_blank" rel="noopener noreferrer">
+    <FaGithub className="transition-transform duration-300 hover:scale-110" />
+  </a>
+</div>
+
 
           {/* スクロール誘導アイコン */}
-          <div className="absolute bottom-10 animate-bounce">
+          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce">
             <a href="#about" className="text-3xl">↓</a>
           </div>
         </section>
@@ -49,42 +61,68 @@ import { motion } from "framer-motion";
             </div>
   
             <div className="w-full md:w-1/2">
-              <h2 className="text-4xl font-bold text-gray-900">About Me</h2>
+              <h2 className={`${LoraFont.className} text-4xl font-bold text-gray-900`}>About Me</h2>
               <div className="space-y-3 mt-6">
               <div className="flex justify-between w-auto mx-auto p-4 bg-gray-100 rounded-lg">
-                <span className="font-semibold text-lg">名前:</span>
-                <span className="font-semibold text-lg">筒崎 乙華</span>
+                <span className="font-light text-lg">名前：</span>
+                <span className="font-light text-lg">筒崎 乙華</span>
               </div>
               <div className="flex justify-between w-auto mx-auto p-4 bg-gray-100 rounded-lg">
-                <span className="font-semibold text-lg">専攻:</span>
-                <span className="font-semibold text-lg">情報工学</span>
+                <span className="font-light text-lg">専攻:</span>
+                <span className="font-light text-lg">情報工学</span>
               </div>
               <div className="flex justify-between w-full mx-auto p-4 bg-gray-100 rounded-lg">
-                <span className="font-semibold text-lg">年齢:</span>
-                <span className="font-semibold text-lg">21</span>
+                <span className="font-light text-lg">年齢:</span>
+                <span className="font-light text-lg">21</span>
               </div>
               <div className="flex justify-between w-full mx-auto p-4 bg-gray-100 rounded-lg">
-                <span className="font-semibold text-lg">趣味:</span>
-                <span className="font-semibold text-lg">ツムツム，セルフネイル💅</span>
+                <span className="font-light text-lg">趣味:</span>
+                <span className="font-light text-lg">ツムツム，セルフネイル💅</span>
               </div>
             </div>
           </div>
 
           </div>
           </section>
-        {/* History */}
-        <div className="space-y-8 mt-15">
-          <h3 className="text-4xl font-bold text-gray-900">History</h3>
-        <div className="p-4 bg-gray-100 rounded-lg shadow-md">
-          <h4 className="text-lg font-semibold">人工衛星開発（熱設計）</h4>
-    <p className="text-gray-700">熱設計のシミュレーションと評価を担当し、プロジェクトの遅延を解決</p>
-  </div>
-  <div className="p-4 bg-gray-100 rounded-lg shadow-md">
-    <h4 className="text-lg font-semibold">AHPを用いたTシャツデザイン評価</h4>
-    <p className="text-gray-700">データ分析を基に、Tシャツデザインの評価を実施し、企画部長に提案</p>
-  </div>
-</div>
 
+
+        {/* History */}
+<div className="flex flex-col items-center justify-center space-y-8 mt-16">
+  <h2 className={`${LoraFont.className} text-4xl font-bold text-gray-900 text-center`}>History</h2>
+  <ol className="relative border-l border-gray-300 dark:border-gray-700 w-full max-w-2xl mx-auto sm:transform sm:border-l-2 md:transform md:translate-x-[-2%]">    
+  <li className="mb-10 pl-10 relative flex items-center">
+    <div className="absolute w-3 h-3 bg-gray-300 rounded-full top-1/2 -translate-y-1/2 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+    <div className="ml-8">
+      <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2016</time>
+      <h3 className="font-light text-lg text-gray-700 dark:text-white">四天王寺中学校入学</h3>
+    </div>
+  </li>
+  <li className="mb-10 pl-10 relative flex items-center">
+    <div className="absolute w-3 h-3 bg-gray-300 rounded-full top-1/2 -translate-y-1/2 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+    <div className="ml-8">
+      <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2019</time>
+      <h3 className="text-lg font-light text-gray-700 dark:text-white">四天王寺高等学校入学</h3>
+    </div>
+  </li>
+  <li className="pl-10 relative flex items-center">
+    <div className="absolute w-3 h-3 bg-gray-300 rounded-full top-1/2 -translate-y-1/2 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+    <div className="ml-8">
+      <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2022</time>
+      <h3 className="text-lg font-light text-gray-700 dark:text-white">大阪公立大学工学部情報工学科入学</h3>
+      <h3 className="text-lg font-light text-gray-700 dark:text-white">小型宇宙機システム研究センター（SSSRC）に所属</h3>
+    </div>
+  </li>
+  <li className="pl-10 relative mt-8 flex items-center">
+    <div className="ml-8">
+    <div className="absolute w-3 h-3 bg-gray-300 rounded-full top-1/2 -translate-y-1/2 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+      <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Oct. 2024 ~</time>
+      <h3 className="text-lg font-light text-gray-700 dark:text-white">MultimodalDP</h3>
+    </div>
+  </li>
+</ol>
+  </div>
+  {/* 下のライン */}
+  <div className="w-64 h-1 bg-white mt-30"></div>
       </div>
     );
   }
