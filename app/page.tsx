@@ -20,28 +20,28 @@ const KaiseiFont = Kaisei_Opti({
         {/* Hero セクション */}
         <section className="min-h-screen flex flex-col items-center justify-center bg-pink-200 font-sans text-6xl font-bold">
         <h1 className={`${LoraFont.className} mt-16 sm:mt-[150px] text-6xl tracking-wide text-center mx-auto text-black`}>Otoka Tsutsusaki</h1>
-        <h2 className={`${LoraFont.className} mt-[10px] text-4xl text-blac`}>Portfolio</h2>
+        <h2 className={`${LoraFont.className} mt-[10px] text-4xl text-blac text-black`}>Portfolio</h2>
         
 
         {/* 下のライン */}
         <div className="w-64 h-1 bg-black mt-30"></div>
 
         {/* SNS アイコン */}
-<div className="flex space-x-10 mt-16 text-3xl">
+<div className="text-black flex space-x-10 mt-16 text-3xl">
   <a href="https://twitter.com/your_twitter" target="_blank" rel="noopener noreferrer">
     <FaTwitter className="transition-transform duration-300 hover:scale-110" />
   </a>
   <a href="https://www.instagram.com/otto_piyopiyo" target="_blank" rel="noopener noreferrer">
-    <FaInstagram className="transition-transform duration-300 hover:scale-110" />
+    <FaInstagram className="text-black transition-transform duration-300 hover:scale-110" />
   </a>
   <a href="https://github.com/otoka34" target="_blank" rel="noopener noreferrer">
-    <FaGithub className="transition-transform duration-300 hover:scale-110" />
+    <FaGithub className="text-black transition-transform duration-300 hover:scale-110" />
   </a>
 </div>
 
 
           {/* スクロール誘導アイコン */}
-          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <div className="text-black absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce">
             <a href="#about" className="text-3xl">↓</a>
           </div>
         </section>
