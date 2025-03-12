@@ -94,29 +94,29 @@ const KaiseiFont = Kaisei_Opti({
     <div className="absolute w-3 h-3 bg-gray-300 rounded-full top-1/2 -translate-y-1/2 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
     <div className="ml-8">
       <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2016</time>
-      <h3 className="font-light text-lg text-gray-700 dark:text-white">四天王寺中学校入学</h3>
+      <h3 className="font-light text-lg text-gray-700">四天王寺中学校入学</h3>
     </div>
   </li>
   <li className="mb-10 pl-10 relative flex items-center">
     <div className="absolute w-3 h-3 bg-gray-300 rounded-full top-1/2 -translate-y-1/2 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
     <div className="ml-8">
       <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2019</time>
-      <h3 className="text-lg font-light text-gray-700 dark:text-white">四天王寺高等学校入学</h3>
+      <h3 className="text-lg font-light text-gray-700">四天王寺高等学校入学</h3>
     </div>
   </li>
   <li className="pl-10 relative flex items-center">
     <div className="absolute w-3 h-3 bg-gray-300 rounded-full top-1/2 -translate-y-1/2 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
     <div className="ml-8">
       <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2022</time>
-      <h3 className="text-lg font-light text-gray-700 dark:text-white">大阪公立大学工学部情報工学科入学</h3>
-      <h3 className="text-lg font-light text-gray-700 dark:text-white">小型宇宙機システム研究センター（SSSRC）に所属</h3>
+      <h3 className="text-lg font-light text-gray-700">大阪公立大学工学部情報工学科入学</h3>
+      <h3 className="text-lg font-light text-gray-700">小型宇宙機システム研究センター（SSSRC）に所属</h3>
     </div>
   </li>
   <li className="pl-10 relative mt-8 flex items-center">
     <div className="ml-8">
     <div className="absolute w-3 h-3 bg-gray-300 rounded-full top-1/2 -translate-y-1/2 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
       <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Oct. 2024 ~</time>
-      <h3 className="text-lg font-light text-gray-700 dark:text-white">MultimodalDP</h3>
+      <h3 className="text-lg font-light text-gray-700">MultimodalDP</h3>
     </div>
   </li>
 </ol>
