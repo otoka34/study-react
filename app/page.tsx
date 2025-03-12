@@ -19,8 +19,8 @@ const KaiseiFont = Kaisei_Opti({
       <div className="relative h-screen">
         {/* Hero セクション */}
         <section className="min-h-screen flex flex-col items-center justify-center bg-pink-200 font-sans text-6xl font-bold">
-        <h1 className={`${LoraFont.className} mt-16 sm:mt-[150px] text-6xl tracking-wide text-center mx-auto`}>Otoka Tsutsusaki</h1>
-        <h2 className={`${LoraFont.className} mt-[10px] text-4xl`}>Portfolio</h2>
+        <h1 className={`${LoraFont.className} mt-16 sm:mt-[150px] text-6xl tracking-wide text-center mx-auto text-black`}>Otoka Tsutsusaki</h1>
+        <h2 className={`${LoraFont.className} mt-[10px] text-4xl text-blac`}>Portfolio</h2>
         
 
         {/* 下のライン */}
@@ -64,20 +64,20 @@ const KaiseiFont = Kaisei_Opti({
               <h2 className={`${LoraFont.className} text-4xl font-bold text-gray-900`}>About Me</h2>
               <div className="space-y-3 mt-6">
               <div className="flex justify-between w-auto mx-auto p-4 bg-gray-100 rounded-lg">
-                <span className="font-light text-lg">名前：</span>
-                <span className="font-light text-lg">筒崎 乙華</span>
+                <span className="font-light text-lg text-black">名前：</span>
+                <span className="font-light text-lg text-black">筒崎 乙華</span>
               </div>
               <div className="flex justify-between w-auto mx-auto p-4 bg-gray-100 rounded-lg">
-                <span className="font-light text-lg">専攻:</span>
-                <span className="font-light text-lg">情報工学</span>
+                <span className="font-light text-lg text-black">専攻:</span>
+                <span className="font-light text-lg text-black">情報工学</span>
               </div>
               <div className="flex justify-between w-full mx-auto p-4 bg-gray-100 rounded-lg">
-                <span className="font-light text-lg">年齢:</span>
-                <span className="font-light text-lg">21</span>
+                <span className="font-light text-lg text-black">年齢:</span>
+                <span className="font-light text-lg text-black">21</span>
               </div>
               <div className="flex justify-between w-full mx-auto p-4 bg-gray-100 rounded-lg">
-                <span className="font-light text-lg">趣味:</span>
-                <span className="font-light text-lg">ツムツム，セルフネイル💅</span>
+                <span className="font-light text-lg text-black">趣味:</span>
+                <span className="font-light text-lg text-black">ツムツム，セルフネイル💅</span>
               </div>
             </div>
           </div>
