@@ -29,7 +29,7 @@ const KaiseiFont = Kaisei_Opti({
         {/* SNS アイコン */}
 <div className="text-black flex space-x-10 mt-16 text-3xl">
   <a href="https://twitter.com/your_twitter" target="_blank" rel="noopener noreferrer">
-    <FaTwitter className="transition-transform duration-300 hover:scale-110" />
+    <FaTwitter className="text-black transition-transform duration-300 hover:scale-110" />
   </a>
   <a href="https://www.instagram.com/otto_piyopiyo" target="_blank" rel="noopener noreferrer">
     <FaInstagram className="text-black transition-transform duration-300 hover:scale-110" />
@@ -87,7 +87,7 @@ const KaiseiFont = Kaisei_Opti({
 
 
         {/* History */}
-<div className="flex flex-col items-center justify-center space-y-8 mt-16">
+<div className="bg-white flex flex-col items-center justify-center space-y-8 mt-16">
   <h2 className={`${LoraFont.className} text-4xl font-bold text-gray-900 text-center`}>History</h2>
   <ol className="relative border-l border-gray-300 dark:border-gray-700 w-full max-w-2xl mx-auto sm:transform sm:border-l-2 md:transform md:translate-x-[-2%]">    
   <li className="mb-10 pl-10 relative flex items-center">
