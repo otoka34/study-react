@@ -28,7 +28,7 @@ const KaiseiFont = Kaisei_Opti({
 
         {/* SNS アイコン */}
 <div className="text-black flex space-x-10 mt-16 text-3xl">
-  <a href="https://twitter.com/your_twitter" target="_blank" rel="noopener noreferrer">
+  <a href="https://x.com/py__py__34" target="_blank" rel="noopener noreferrer">
     <FaTwitter className="text-black transition-transform duration-300 hover:scale-110" />
   </a>
   <a href="https://www.instagram.com/otto_piyopiyo" target="_blank" rel="noopener noreferrer">
@@ -84,6 +84,73 @@ const KaiseiFont = Kaisei_Opti({
 
           </div>
           </section>
+
+        {/* Works Section */}
+        <section id="works" className="py-24 bg-white">
+          <div className="max-w-5xl mx-auto px-6">
+            <h2 className={`${LoraFont.className} text-4xl font-bold text-gray-900 text-center`}>Works / Research</h2>
+            <div className="grid grid-cols-1 gap-8 mt-12">
+              {/* Work 1 */}
+              <div className="bg-gray-50 rounded-lg shadow-lg p-6 flex flex-col items-center">
+                <div className="md:w-9/10">
+                  <h3 className="text-xl font-bold">つぶ訳</h3>
+                  <p className="text-gray-700">
+                    2025年5月にハッカソンでチーム開発。日常のツイートをポジティブに変換するWebアプリです。
+                  </p>
+                  <a
+                    href="https://tsubuyaku-app-xifd.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 hover:underline mt-4 inline-block"
+                  >
+                    View App
+                  </a>
+                </div>
+              </div>
+              {/* Work 2 */}
+              <div className="bg-gray-50 rounded-lg shadow-lg p-6 flex flex-col items-center">
+                <div className="md:w-9/10">
+                  <h3 className="text-xl font-bold">ChemiLens</h3>
+                  <p className="text-gray-700">
+                    2025年9月のハッカソンでチーム開発。写真を撮影すると物体に含まれる化学物質を検出し、3Dモデルを表示します。出会った元素を集めるスタンプラリー機能も。
+                  </p>
+                  <a
+                    href="https://demo-project-delta-henna.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 hover:underline mt-4 inline-block"
+                  >
+                    View App
+                  </a>
+                </div>
+              </div>
+              {/* Work 3 */}
+              <div className="bg-gray-50 rounded-lg shadow-lg p-6 flex flex-col items-center">
+                <div className="md:w-9/10">
+                  <h3 className="text-xl font-bold">ポートフォリオ</h3>
+                  <p className="text-gray-700">
+                    このポートフォリオサイトです。Next.js, Tailwind CSS, TypeScriptで作成しました。
+                  </p>
+                  <a
+                    href="https://otokatsutsusaki.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 hover:underline mt-4 inline-block"
+                  >
+                    View App
+                  </a>
+                </div>
+              </div>
+              {/* Research */}
+              <div className="bg-gray-50 rounded-lg shadow-lg p-6 flex flex-col items-center">
+                <div className="md:w-9/10">
+                  <h3 className="text-xl font-bold">患者の動的予測モデル</h3>
+                  <p className="text-gray-700 mt-2">ICU患者の予後予測のための動的な予後予測モデルの構築について研究しています。臨床現場での医師の判断を助けることを目指しています。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
 
         {/* History */}
